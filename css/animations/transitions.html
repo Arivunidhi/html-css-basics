@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background: gold;
+        /* transition: transform 1s ease-out; */
+        transition: transform 1s, background 0.5s;
+        /* cubic-bezier.com */
+      }
+      .box:hover {
+        transform: rotate(45deg) translateX(50px);
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quam?
+      </p>
+    </div>
+  </body>
+</html>

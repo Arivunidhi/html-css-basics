@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      @keyframes pop {
+        0% {
+          transform: scale(1);
+        }
+        25% {
+          transform: scale(1.3);
+        }
+        50% {
+          transform: rotate(45deg);
+          background: tomato;
+        }
+        100% {
+          transform: rotate(0);
+        }
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background: gold;
+      }
+
+      .animation-pop {
+        animation-name: pop;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-iteration-count: 2;
+        animation-timing-function: liner;
+        animation-direction: alternate;
+      }
+    </style>
+    <!-- https://animate.style/ -->
+  </head>
+  <body>
+    <div class="container animate__animated animate__bounce animate__delay-2s">
+      <p class="box">Lorem ipsum dolor</p>
+    </div>
+  </body>
+</html>

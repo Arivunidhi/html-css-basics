@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Elements</title>
+    <style>
+      .avator {
+        width: 5rem;
+        height: 5rem;
+        background: gold;
+        float: left;
+        margin-right: 0.5rem;
+      }
+      .clear {
+        clear: both;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .tweet {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Floating Elements</h2>
+    <article class="tweet clearfix">
+      <div class="avator"></div>
+      <p>Paragraph contains avatar</p>
+      <p class="clear">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero
+        laborum nisi enim! Nobis voluptatibus quam laborum repellat fuga ipsa ut
+        est, totam architecto quaerat maxime voluptas? Error atque modi saepe
+        repellat totam, doloremque inventore reiciendis aspernatur velit, harum
+        expedita unde! Voluptate cum aperiam molestias delectus soluta, quia
+        accusantium accusamus nisi nihil labore totam iste omnis suscipit, odio,
+        inventore nam pariatur repellendus doloribus dolores ab rem vitae
+        consectetur deserunt. Praesentium distinctio provident eum saepe natus
+        accusantium, asperiores assumenda vero eveniet ut veniam neque quibusdam
+        nesciunt fugit repellat rerum delectus? Dolore necessitatibus ut,
+        provident fugit ducimus illo ipsa repudiandae excepturi laudantium?
+      </p>
+    </article>
+  </body>
+</html>

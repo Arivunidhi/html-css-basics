@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-4</title>
+    <style>
+      @media screen and (min-width: 1024px) {
+        .container {
+          display: grid;
+          grid-template: repeat(4, 250px) / repeat(3, 350px);
+          gap: 5px 5px;
+          justify-items: stretch;
+          align-items: stretch;
+          justify-content: center;
+        }
+
+        .img {
+          border-radius: 5px;
+          object-fit: cover;
+        }
+
+        .img1 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 1;
+        }
+
+        .img3 {
+          grid-column-start: 2;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+
+        .img2 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 2;
+          grid-row-end: 2;
+        }
+
+        .img4 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 3;
+          grid-row-end: 4;
+        }
+
+        .img5 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 3;
+          grid-row-end: 4;
+        }
+
+        .img6 {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 3;
+          grid-row-end: 4;
+        }
+
+        .img7 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 4;
+          grid-row-end: 5;
+        }
+
+        .img8 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 4;
+          grid-row-end: 5;
+        }
+
+        .img9 {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 4;
+          grid-row-end: 5;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .container {
+          display: grid;
+          grid-template: repeat(5, 100px) / repeat(2, 150px);
+          gap: 5px 5px;
+          justify-items: stretch;
+          align-items: stretch;
+          justify-content: center;
+        }
+        .img {
+          border-radius: 5px;
+          object-fit: cover;
+        }
+
+        .img1 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 1;
+        }
+        .img2 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 1;
+        }
+        .img3 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 2;
+          grid-row-end: 2;
+        }
+
+        .img4 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 2;
+        }
+
+        .img5 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 3;
+          grid-row-end: 3;
+        }
+
+        .img6 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 3;
+          grid-row-end: 3;
+        }
+
+        .img7 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 4;
+          grid-row-end: 4;
+        }
+
+        .img8 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 4;
+          grid-row-end: 4;
+        }
+
+        .img9 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 5;
+          grid-row-end: 5;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .container {
+          display: grid;
+          grid-template: repeat(9, 100px) / repeat(1, 150px);
+          gap: 5px 5px;
+          justify-items: stretch;
+          align-items: stretch;
+          justify-content: center;
+        }
+        .img {
+          border-radius: 5px;
+          object-fit: cover;
+        }
+
+        .img1 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 1;
+        }
+        .img2 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 2;
+          grid-row-end: 2;
+        }
+        .img3 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 3;
+          grid-row-end: 3;
+        }
+
+        .img4 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 4;
+          grid-row-end: 4;
+        }
+
+        .img5 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 5;
+          grid-row-end: 5;
+        }
+
+        .img6 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 6;
+          grid-row-end: 6;
+        }
+
+        .img7 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 7;
+          grid-row-end: 7;
+        }
+
+        .img8 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 8;
+          grid-row-end: 8;
+        }
+
+        .img9 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 9;
+          grid-row-end: 9;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="img img1" src="/css/exercise/images/photo1.jfif" alt="" />
+      <img class="img img2" src="/css/exercise/images/photo2.jfif" alt="" />
+      <img class="img img3" src="/css/exercise/images/photo3.jfif" alt="" />
+      <img class="img img4" src="/css/exercise/images/photo4.jfif" alt="" />
+      <img class="img img5" src="/css/exercise/images/photo5.jfif" alt="" />
+      <img class="img img6" src="/css/exercise/images/photo6.jfif" alt="" />
+      <img class="img img7" src="/css/exercise/images/photo7.jfif" alt="" />
+      <img class="img img8" src="/css/exercise/images/photo8.jfif" alt="" />
+      <img class="img img9" src="/css/exercise/images/photo9.jfif" alt="" />
+    </div>
+  </body>
+</html>

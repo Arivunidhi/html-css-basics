@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+
+      .box::before,
+      .box1::before {
+        content: "Hello";
+      }
+      p {
+        padding: 0;
+        margin: 10px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: gold;
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: gold;
+        display: inline-block;
+      }
+
+      .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: gold;
+        overflow: hidden auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Box Model</h2>
+    <p>FirstParagraph is inside box</p>
+    <p>Next Paragraph is inside box</p>
+    <div class="box"></div>
+    <span class="box1"></span><span class="box1"></span>
+    <h2>Overflowing</h2>
+    <div class="box3">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quod fugiat
+        dolorum, eius quaerat quibusdam ipsa, soluta commodi veniam saepe sint
+        praesentium incidunt consequuntur tempora nobis quis numquam, magni
+        natus vel! Fugiat quo cumque aliquid, animi at ab cum a, doloribus illum
+        quod possimus fugit quia omnis rem praesentium molestiae.
+      </p>
+    </div>
+  </body>
+</html>

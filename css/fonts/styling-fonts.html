@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- type-scale.com -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling Fonts</title>
+    <style>
+      @font-face {
+        font-family: "lato-bold";
+        src: url("/css/fonts/font-files/lato/Lato-Bold.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: optional;
+      }
+
+      @font-face {
+        font-family: "lato-Regular";
+        src: url("/css/fonts/font-files/lato/Lato-Regular.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        margin: 10px;
+        font-family: lato-bold, lato-Regular, Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        line-height: 3.5;
+        /* letter-spacing: 1px;
+        word-spacing: 5px; */
+        /* width: 50ch; */
+      }
+      p + p {
+        font-weight: normal;
+        font-style: italic;
+        color: darkred;
+        text-align: left;
+        text-indent: 2rem;
+      }
+      h1 {
+        font-weight: bold;
+      }
+
+      h2 {
+        margin: 3rem 0 1rem 0;
+        text-decoration: underline;
+        text-transform: capitalize;
+      }
+      .para {
+        border: 3px solid black;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-clamp: 3;
+        direction: ltr;
+      }
+      .columns {
+        columns: 2;
+        column-gap: 2rem;
+        column-rule: 3px dotted hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolor
+      dolorum aut minus eos debitis nisi velit. Fuga distinctio aut vero
+      possimus in et voluptatem provident sequi, explicabo quam, ullam minus
+      nihil beatae, porro omnis laudantium repudiandae aperiam maiores nemo quos
+      temporibus! Esse doloremque nesciunt vitae optio velit ex ipsam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolor
+      dolorum aut minus eos debitis nisi velit. Fuga distinctio aut vero
+      possimus in et voluptatem provident sequi, explicabo quam, ullam minus
+      nihil beatae, porro omnis laudantium repudiandae aperiam maiores nemo quos
+      temporibus! Esse doloremque nesciunt vitae optio velit ex ipsam.
+    </p>
+    <h2>Heading</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolor
+      dolorum aut minus eos debitis nisi velit. Fuga distinctio aut vero
+      possimus in et voluptatem provident sequi, explicabo quam, ullam minus
+      nihil beatae, porro omnis laudantium repudiandae aperiam maiores nemo quos
+      temporibus! Esse doloremque nesciunt vitae optio velit ex ipsam.
+    </p>
+
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolor
+      dolorum aut minus eos debitis nisi velit. Fuga distinctio aut vero
+      possimus in et voluptatem provident sequi, explicabo quam, ullam minus
+      nihil beatae, porro omnis laudantium repudiandae aperiam maiores nemo quos
+      temporibus! Esse doloremque nesciunt vitae optio velit ex ipsam.
+    </p>
+
+    <p class="columns">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolor
+      dolorum aut minus eos debitis nisi velit. Fuga distinctio aut vero
+      possimus in et voluptatem provident sequi, explicabo quam, ullam minus
+      nihil beatae, porro omnis laudantium repudiandae aperiam maiores nemo quos
+      temporibus! Esse doloremque nesciunt vitae optio velit ex ipsam.
+    </p>
+  </body>
+</html>

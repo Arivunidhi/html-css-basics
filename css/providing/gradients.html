@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradients</title>
+    <style>
+      .box1 {
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(45deg, blue, yellow);
+      }
+      .box5 {
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(to bottom right, blue, yellow);
+      }
+      .box2 {
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(45deg, blue, yellow, red);
+      }
+      .box4 {
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(45deg, blue, yellow 90%);
+      }
+
+      .box3 {
+        width: 600px;
+        height: 200px;
+        background: radial-gradient(
+          circle,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+      }
+    </style>
+    <!-- https://cssgradient.io/ -->
+  </head>
+  <body>
+    <h1>Gradients Example</h1>
+    <h2>Linear Gradient With Position</h2>
+    <div class="box1"></div>
+    <h2>Linear Gradient With Position using Words</h2>
+    <div class="box5"></div>
+    <h2>Linear Gradient With Color percentage</h2>
+    <div class="box4"></div>
+    <h2>Linear Gradient With Three colors</h2>
+    <div class="box2"></div>
+    <h2>Radial Gradient With Two colors</h2>
+    <a href="https://cssgradient.io" target="_blank"> Refer</a>
+
+    <div class="box3"></div>
+  </body>
+</html>

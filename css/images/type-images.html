@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icon Images</title>
+    <script
+      src="https://kit.fontawesome.com/5e1a7c265c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      img:hover {
+        filter: blur(10px);
+        /* width: 400px; */
+      }
+
+      span {
+        font-size: 10rem;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      sizes="(max-width: 500px) 100vw,(max-width: 700px) 50vw,33vw"
+      srcset="
+        /css/images/img/responsive/meal-full_yf3pdi_c_scale,w_200.jpg   200w,
+        /css/images/img/responsive/meal-full_yf3pdi_c_scale,w_607.jpg   607w,
+        /css/images/img/responsive/meal-full_yf3pdi_c_scale,w_875.jpg   875w,
+        /css/images/img/responsive/meal-full_yf3pdi_c_scale,w_1149.jpg 1149w,
+        /css/images/img/responsive/meal-full_yf3pdi_c_scale,w_1400.jpg 1400w
+      "
+      src="/css/images/img/responsive/meal-full_yf3pdi_c_scale,w_200.jpg"
+      alt=""
+    />
+    <picture>
+      <source type="image/webp" srcset="/css/images/img/meal.webp" />
+      <source type="image/jpeg" srcset="/css/images/img/meal.jpeg" />
+      <img src="/css/images/img/meal.jpeg" alt="A curry bowl" />
+    </picture>
+
+    <picture>
+      <source
+        media="(max-width: 500px)"
+        srcset="/css/images/img/meal-full.jpg"
+      />
+      <source
+        media="(min-width: 501px)"
+        srcset="/css/images/img/meal-cropped.jpg"
+      />
+      <img src="/css/images/img/meal.jpeg" alt="A curry bowl" />
+    </picture>
+
+    <span class="fas fa-user-friends"></span>
+  </body>
+</html>

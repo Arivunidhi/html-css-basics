@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element Selectors</title>
+    <style>
+      p::first-letter {
+        color: orange;
+        font-style: bold;
+        font-size: 20px;
+      }
+
+      p::first-line {
+        font-weight: bold;
+      }
+      ::selection {
+        background-color: pink;
+      }
+      p::before {
+        content: "...";
+        display: block;
+      }
+
+      p::after {
+        content: "!!!!";
+        color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Pseudo Element Selectors Example</h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil excepturi,
+      tempora voluptatem, exercitationem delectus rem odio accusantium
+      necessitatibus provident consequatur error maxime consectetur doloremque
+      voluptatibus eum cum, numquam quas aut nisi eius labore veniam facere.
+      Expedita exercitationem ipsam at facere quos quas placeat nulla beatae
+      officia, quasi aperiam magni. Id iste dignissimos quisquam vero, inventore
+      exercitationem, fugiat nisi excepturi, sit veritatis obcaecati maxime
+      rerum fugit similique magnam sapiente. Nam dolor soluta, quia, ipsum eius
+      corrupti fugit molestiae sint qui modi nesciunt! Quidem impedit sint cum
+      magni et earum unde nobis officia a quam sequi, vitae non. Mollitia
+      ratione velit dolores?
+    </p>
+  </body>
+</html>

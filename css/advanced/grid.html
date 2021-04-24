@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grids</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template: repeat(3, 100px) / repeat(2, 100px);
+        grid-template-areas: "header header" "sidebar main" "footer footer";
+        /* row-gap: 10px;
+        column-gap: 10px; */
+        gap: 10px 10px;
+        /* grid-template: 100px auto 100px/30fr 70fr; */
+        border: 3px solid black;
+        justify-items: stretch;
+        align-items: stretch;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+      }
+      .box {
+        /* width: 5rem; */
+        /* height: 5rem; */
+        background: gold;
+      }
+      .box1 {
+        /* grid-column: 1/3;
+        grid-row: 2/4; */
+        grid-area: header;
+        /* grid-area: 1/1/1/3; */
+      }
+      .four {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">A</div>
+      <div class="box">B</div>
+      <div class="box four">C</div>
+      <div class="box">D</div>
+    </div>
+  </body>
+</html>

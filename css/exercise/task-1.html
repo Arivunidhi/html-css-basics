@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-1</title>
+    <style>
+      table,
+      td,
+      th {
+        border-collapse: collapse;
+        padding: 5px;
+        border-bottom: 1px solid #c4dcf3;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #eef7ff;
+      }
+
+      thead,
+      tfoot {
+        background-color: #427fef;
+        border-collapse: collapse;
+        border: 1px solid #c4dcf3;
+        padding: 5px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Table using Pseudo-class selectors</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>OrderID</th>
+          <th>Order Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>USA</td>
+          <td>1000</td>
+          <td>$1,300</td>
+        </tr>
+
+        <tr>
+          <td>USA</td>
+          <td>1001</td>
+          <td>$700</td>
+        </tr>
+        <tr>
+          <td>CA</td>
+          <td>1002</td>
+          <td>$2,000</td>
+        </tr>
+        <tr>
+          <td>CA</td>
+          <td>1003</td>
+          <td>$1,000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td>$5,0000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

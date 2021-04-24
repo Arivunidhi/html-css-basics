@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milligram</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <style>
+      form {
+        width: 50%;
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="text">Text</label>
+      <input type="text" name="" id="" />
+      <label for="text1">Text with Value</label>
+      <input type="text1" value="Default value" />
+      <label for="text2">Text Disabled</label>
+      <input type="text2" disabled value="Disabled text" />
+      <label for="text3">Text with place holder</label>
+      <input type="text3" placeholder="Enter name" />
+      <label for="number">Number</label>
+      <input type="number" name="" id="" />
+      <label for="password">Password</label>
+      <input type="password" name="" id="" />
+      <label for="date">Date</label>
+      <input type="date" name="" id="" />
+      <label for="email">Email</label>
+      <input type="email" name="" id="" />
+      <label for="area">Text Area</label>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <label for="text">Data List</label>
+      <input type="text" name="" id="" list="countries" />
+      <datalist id="countries">
+        <option data-value="1">Australia</option>
+        <option data-value="2">Canada</option>
+        <option data-value="3">Germany</option>
+        <option data-value="4">USA</option>
+      </datalist>
+      <label for="text">Drop Down</label>
+      <select name="" id="dropdown" multiple>
+        <option value="">Select Course</option>
+        <option value="1">HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">Javascript</option>
+      </select>
+
+      <label for="text">Multiple Dropdown</label>
+      <select name="" id="dropdown" multiple>
+        <optgroup label="Front-end Courses">
+          <option value="">Select Course</option>
+          <option value="1">HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">Javascript</option>
+        </optgroup>
+        <optgroup label="Back-end Courses">
+          <option value="">Select Course</option>
+          <option value="1">Java</option>
+          <option value="2">Python</option>
+          <option value="3">MSSQL</option>
+        </optgroup>
+      </select>
+
+      <label for="">Checkbox</label>
+      <div>
+        <input type="checkbox" name="" id="checkbox1" />
+        <label class="label-inline" for="checkbox1">Front-End</label>
+      </div>
+      <div>
+        <input type="checkbox" name="" id="checkbox2" />
+        <label class="label-inline" for="checkbox2">Back-End</label>
+      </div>
+      <label for="">Radio Button</label>
+      <div>
+        <input type="radio" name="membership" id="silver" checked />
+        <label for="silver" class="label-inline">Silver</label>
+      </div>
+      <div>
+        <input type="radio" name="membership" id="gold" disabled />
+        <label for="gold" class="label-inline">Gold</label>
+      </div>
+      <label for="">Slider</label>
+      <input type="range" min="0" max="90" name="" id="" />
+      <label for="">File Inputs</label>
+      <input type="file" name="" id="" multiple />
+      <input type="file" name="" id="" accept=".jpg,png" />
+      <input type="file" name="" id="" accept="image/*" />
+
+      <fieldset>
+        <legend>Billing</legend>
+        <input type="text" name="" id="" />
+        <input type="text" name="" id="" />
+        <input type="text" name="" id="" />
+      </fieldset>
+      <fieldset>
+        <legend>Address</legend>
+        <input type="text" name="" id="" />
+        <input type="text" name="" id="" />
+        <input type="text" name="" id="" />
+      </fieldset>
+      <label for="">Hidden</label>
+      <input type="hidden" name="" value="123" />
+      <label for="">Validation</label>
+      <input
+        type="text"
+        name=""
+        value="123"
+        required
+        minlength="3"
+        maxlength="10"
+      />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

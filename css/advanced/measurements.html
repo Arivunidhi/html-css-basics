@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Measurements</title>
+    <style>
+      html {
+        font-size: 62.5%; /*62.5% of 16px=10px*/
+      }
+      body {
+        margin: 10px;
+      }
+      .box1 {
+        width: 50%;
+        height: 100px;
+        background-color: gold;
+        border-top: 3px solid black;
+      }
+      .box {
+        width: 50vw;
+        height: 100vh;
+        background-color: gold;
+        border-top: 3px solid black;
+      }
+      .box2 {
+        font-size: 16px;
+        width: 10em;
+        height: 100vh;
+        background-color: gold;
+        border-top: 3px solid black;
+      }
+      .box3 {
+        width: 15rem;
+        height: 10vh;
+        background-color: gold;
+        border-top: 3px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Relative Units: % takes the width of body</h2>
+    <div class="box1"></div>
+    <h2>Relative Units: vw,vh will occupy the entire screen</h2>
+    <div class="box"></div>
+    <h2>
+      Relative Units: em=1em*16px(font size),vh will occupy the entire screen
+    </h2>
+    <div class="box2"></div>
+    <h2>
+      Relative Units: em=1rem*10px(default root element font size),vh will
+      occupy the entire screen
+    </h2>
+    <div class="box3">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quae?
+      </p>
+    </div>
+  </body>
+</html>

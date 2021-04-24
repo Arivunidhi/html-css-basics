@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning</title>
+    <style>
+      body {
+        margin: 10px;
+        height: 200vh;
+      }
+      .boxes {
+        border: 3px solid black;
+      }
+
+      .box {
+        width: 5rem;
+        height: 5rem;
+      }
+      .box-one {
+        background: gold;
+      }
+      .box-two {
+        background: tomato;
+        position: relative;
+        left: 4rem;
+        bottom: 4rem;
+        z-index: 0;
+      }
+
+      .box-three {
+        background: dodgerblue;
+      }
+      .boxes2 {
+        border: 3px solid lightgray;
+        position: relative;
+      }
+
+      .box-four {
+        background: gold;
+      }
+      .box-five {
+        background: tomato;
+        position: fixed;
+        top: 0;
+        left: 2rem;
+        right: 2rem;
+        width: auto;
+      }
+
+      .box-six {
+        background: dodgerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Relative Positioning Example</h2>
+    <div class="boxes">
+      <div class="box box-one"></div>
+      <div class="box box-two"></div>
+      <div class="box box-three"></div>
+    </div>
+
+    <h2>Absolute Positioning Example</h2>
+    <div class="boxes2">
+      <div class="box box-four"></div>
+      <div class="box box-five"></div>
+      <div class="box box-six"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .box {
+        background: gold;
+        padding: 1rem;
+      }
+
+      .box:nth-of-type(2) {
+        background: dodgerblue;
+      }
+
+      @media screen and (min-width: 600px) {
+        .container {
+          flex-direction: row;
+        }
+      }
+      @media screen and (min-width: 900px) {
+        .container {
+          flex-direction: row;
+        }
+
+        .box {
+          background: white;
+        }
+      }
+
+      @media print {
+        body {
+          font-size: 12pt;
+        }
+        .box {
+          padding: 0.5cm;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
+          quod sit reprehenderit voluptates deleniti praesentium ex facere
+          ratione quia magni nisi obcaecati laborum possimus saepe eius omnis,
+          eaque totam fugiat perspiciatis aliquid eveniet repudiandae. Enim
+          optio, assumenda eveniet labore dolorum ex pariatur id magnam ullam ut
+          quam, vitae molestias odio!
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odio.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

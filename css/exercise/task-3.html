@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-3</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+      .navbar {
+        background: black;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        margin: 0;
+      }
+
+      .nav {
+        color: white;
+        display: block;
+        padding: 2em;
+      }
+
+      .nav:hover {
+        background-color: orange;
+      }
+      @media screen and (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+        }
+        .nav {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav">About</div>
+      <div class="nav">Courses</div>
+      <div class="nav">Forum</div>
+      <div class="nav">Learning Paths</div>
+      <div class="nav">Contact</div>
+    </div>
+  </body>
+</html>
